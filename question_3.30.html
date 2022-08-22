@@ -1,0 +1,12 @@
+<pl-question-panel>
+   <p>An irregular shaped hollow tube, with  the dimensions  shown in fig below, is subjected  to a  torque of ${{params.t}} \rm\ft$ KN-m. If the tube is fabricated  from steel and is ${{params.l}} \rm\ft$ m long, determine  the maximum value of  the average  shear stress and angle of twist. Note  that the wall thickness of vertical  sides is ${{params.vertical}} \rm\ft$ mm and the thickness of horizantal sides is ${{params.hori}} \rm\ft$ mm.
+
+   </p> 
+   <p>
+      <pl-figure file-name={{params.figureFilename}} directory="clientFilesCourse"></pl-figure>
+   </p>
+</pl-question-panel>
+
+
+<pl-number-input answers-name="tou" comparison="relabs" rtol="1e-2" atol="1e-5" label="$Sheer stress =$" suffix="$\rm\ MPa" > </pl-number-input>
+<pl-number-input answers-name="angle_ans" comparison="relabs" rtol="1e-2" atol="1e-5" label="$Angle ans =$" suffix="$\rm\ Degree " > </pl-number-input>

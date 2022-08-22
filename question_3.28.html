@@ -1,0 +1,11 @@
+<pl-question-panel>
+    <p>
+        A square hollow tube with the dimensions shown below is subjected to ${{params.T}}\rm\ft$  kN-m. If the fabricated from steel with a uniform wall thickness and is ${{params.thickness}} \rm\ in$ m long, determine the average shear stress and angle of twist.
+
+    </p>
+    <p>
+        <pl-figure file-name={{params.figureFilename}} directory="clientFilesCourse"></pl-figure>
+    </p>
+</pl-question-panel>
+<pl-number-input answers-name="tou" comparison="relabs" rtol="1e-2" atol="1e-5" label="$|avg shear stress|$" suffix="$MPa$"></pl-number-input>
+<pl-number-input answers-name="angle_degree" comparison="relabs" rtol="1e-2" atol="1e-5" label="$|angle|=$" suffix="$Degree$"></pl-number-input>
